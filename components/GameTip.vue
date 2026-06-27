@@ -1,7 +1,7 @@
 <template>
   <Transition name="tip">
-    <div v-if="store.tip" class="tip-overlay" @click="store.confirmTip()">
-      <div class="tip-card" :class="store.tip.type" @click.stop>
+    <div v-if="store.tip" class="tip-overlay">
+      <div class="tip-card" :class="store.tip.type">
         <div class="tip-icon">{{ store.tip.type === 'success' ? '✅' : '💀' }}</div>
         <div class="tip-text">{{ store.tip.text }}</div>
         <div class="tip-score" v-if="store.tip.type === 'success'">
