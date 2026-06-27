@@ -23,13 +23,15 @@ const hunterEImg = hunterE
 const hunterFImg = hunterF
 
 // ========== 监管者攻击音效路径（音效文件放在 public/assets/sounds/ 目录下） ==========
+const BASE =
+    import.meta.env.BASE_URL || '/'
 const SOUNDS = {
-    hunter_a: '/assets/sounds/hunter_a.mp3',
-    hunter_b: '/assets/sounds/hunter_b.mp3',
-    hunter_c: '/assets/sounds/hunter_c.mp3',
-    hunter_d: '/assets/sounds/hunter_d.mp3',
-    hunter_e: '/assets/sounds/hunter_e.mp3',
-    hunter_f: '/assets/sounds/hunter_f.mp3',
+    hunter_a: `${BASE}assets/sounds/hunter_a.mp3`,
+    hunter_b: `${BASE}assets/sounds/hunter_b.mp3`,
+    hunter_c: `${BASE}assets/sounds/hunter_c.mp3`,
+    hunter_d: `${BASE}assets/sounds/hunter_d.mp3`,
+    hunter_e: `${BASE}assets/sounds/hunter_e.mp3`,
+    hunter_f: `${BASE}assets/sounds/hunter_f.mp3`,
 }
 
 /** 预加载音效 */
