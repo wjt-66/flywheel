@@ -130,4 +130,38 @@ function onSelectHunter(e) {
 .btn-reset:hover {
   background: #4a5558;
 }
+
+/* 手机端适配 */
+@media (max-width: 640px) {
+  .control-panel {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    gap: 10px;
+    border-radius: 12px;
+  }
+  .panel-title {
+    width: 100%;
+    font-size: 15px;
+  }
+  .control-group {
+    flex: 1;
+    min-width: 140px;
+  }
+  .action-buttons {
+    flex-direction: row;
+    gap: 6px;
+  }
+  .btn {
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+  .hunter-select {
+    font-size: 12px;
+    padding: 5px 6px;
+  }
+}
 </style>

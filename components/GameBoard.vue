@@ -100,7 +100,8 @@ const messageClass = computed(() => {
   background: #16213e;
   border-radius: 16px;
   padding: 32px 40px;
-  width: 520px;
+  max-width: 520px;
+  width: 100%;
   text-align: center;
 }
 
@@ -283,5 +284,51 @@ const messageClass = computed(() => {
 @keyframes glow {
   0%, 100% { box-shadow: 0 0 8px rgba(253, 203, 110, 0.3); }
   50% { box-shadow: 0 0 20px rgba(253, 203, 110, 0.6); }
+}
+
+/* 手机端适配 */
+@media (max-width: 640px) {
+  .game-board {
+    padding: 20px 16px;
+    border-radius: 12px;
+  }
+  .hunter-display {
+    padding: 16px;
+    margin-bottom: 14px;
+  }
+  .hunter-avatar {
+    width: 200px;
+    height: 200px;
+  }
+  .hunter-name {
+    font-size: 20px;
+    margin-top: 8px;
+  }
+  .hunter-stat {
+    font-size: 12px;
+  }
+  .dodge-btn {
+    padding: 14px 16px;
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .btn-hint {
+    font-size: 11px;
+  }
+  .progress-bar-track {
+    height: 16px;
+  }
+  .progress-section {
+    margin-bottom: 12px;
+  }
+  .score-display {
+    font-size: 14px;
+  }
+  .message {
+    font-size: 13px;
+  }
+  .waiting-hint {
+    font-size: 13px;
+  }
 }
 </style>

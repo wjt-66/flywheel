@@ -89,4 +89,30 @@ const store = useGameStore()
 .tip-enter-from { opacity: 0; }
 .tip-enter-from .tip-card { transform: scale(0.9); }
 .tip-leave-to { opacity: 0; }
+
+/* 手机端适配 */
+@media (max-width: 640px) {
+  .tip-card {
+    padding: 24px 20px;
+    min-width: 0;
+    width: 85vw;
+    max-width: 300px;
+    border-radius: 12px;
+  }
+  .tip-icon {
+    font-size: 40px;
+    margin-bottom: 8px;
+  }
+  .tip-text {
+    font-size: 18px;
+  }
+  .tip-score {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .tip-close {
+    padding: 6px 20px;
+    font-size: 13px;
+  }
+}
 </style>

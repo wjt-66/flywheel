@@ -30,4 +30,21 @@ import GameTip from './components/GameTip.vue'
 .main {
   flex-shrink: 0;
 }
+
+/* 手机端适配 */
+@media (max-width: 640px) {
+  .app-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    gap: 12px;
+  }
+  .sidebar {
+    margin-top: 0;
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+  }
+}
 </style>
